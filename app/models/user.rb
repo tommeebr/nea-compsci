@@ -5,5 +5,7 @@
 #password_confirmation:string virtual
 
 
-class UsersController < ApplicationController
+
+class User < ApplicationRecord
+    has_secure_password #SHOULD: make own encryption algorithm
 end
