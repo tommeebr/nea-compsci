@@ -27,14 +27,23 @@
                                         <div class="text-center">
                                             <h4 class="text-dark mb-4">Log in</h4>
                                         </div>
+                                        
+                                        <% flash.each do |message_type, message| %>
+                                            <div class="alert alert-<%= message_type %>">
+                                                <%= message %>
+                                            </div>
+                                        <% end %>
+
                                         <%= form_with(url: sessions_path, local: true, class: 'user') do |form| %>
-                                        <div class="mb-3">
-                                            <%= form.email_field :email, class: 'form-control form-control-user', placeholder: 'Email Address' %>
-                                        </div>
-                                        <div class="mb-3">
-                                            <%= form.password_field :password, class: 'form-control form-control-user', placeholder: 'Password' %>
-                                        </div>
-                                        <%= form.submit 'Submit', class: 'btn btn-primary text-bg-primary d-block btn-user w-100' %>
+                                            <div class="mb-3">
+                                                <%= form.label :email, 'Email Address', class: 'form-label' %>
+                                                <%= form.email_field :email, name: 'session[email]', class: 'form-control form-control-user', placeholder: 'Email Address' %>
+                                            </div>
+                                            <div class="mb-3">
+                                                <%= form.label :password, 'Password', class: 'form-label' %>
+                                                <%= form.password_field :password,name: 'session[password]', class: 'form-control form-control-user', placeholder: 'Password' %>
+                                            </div>
+                                            <%= form.submit 'Submit', class: 'btn btn-primary text-bg-primary d-block btn-user w-100' %>
                                         <% end %>
                                     
                                         <div class="text-center"><a class="small" href="forgot-password.html" style="color: var(--bs-dark-text-emphasis);border-color: var(--bs-body-color);">Forgot Password?</a></div>

@@ -9,7 +9,8 @@ class UsersController < ApplicationController
       if @user.save
         # Handle a successful save.
         # You can redirect to any path you want. For example, to the user's show page:
-        redirect_to @user
+        redirect_to channel_home_path
+        
       else
         # Handle an unsuccessful save.
         render 'new'
