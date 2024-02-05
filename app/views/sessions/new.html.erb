@@ -27,7 +27,7 @@
                                         <div class="text-center">
                                             <h4 class="text-dark mb-4">Log in</h4>
                                         </div>
-                                        
+
                                         <% flash.each do |message_type, message| %>
                                             <div class="alert alert-<%= message_type %>">
                                                 <%= message %>
@@ -43,6 +43,13 @@
                                                 <%= form.label :password, 'Password', class: 'form-label' %>
                                                 <%= form.password_field :password,name: 'session[password]', class: 'form-control form-control-user', placeholder: 'Password' %>
                                             </div>
+
+                                            <!-- reCAPTCHA widget -->
+                                            <div class="mb-3" style="margin-top: 20px;">
+                                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                                <div class="g-recaptcha" data-sitekey="<%= Rails.application.credentials.recaptcha[:site_key] %>"></div>
+                                            </div>
+
                                             <%= form.submit 'Submit', class: 'btn btn-primary text-bg-primary d-block btn-user w-100' %>
                                         <% end %>
                                     
