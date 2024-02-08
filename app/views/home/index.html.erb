@@ -1,1 +1,100 @@
-<h1>Home#index</h1>
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <%= stylesheet_link_tag 'bootstrap.min', media: 'all' %>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap' %>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap' %>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap' %>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Actor&amp;display=swap' %>
+    <%= stylesheet_link_tag 'home', media: 'all' %>
+
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <nav class="navbar navbar-expand-md fixed-top navbar-light" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="#">Brand</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#login">LOGIN</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#login">SIGNUP</a></li>
+                    <li class="nav-item nav-link"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background: linear-gradient(46deg, #6e7bc2 3%, #a1ff92 100%) fixed;">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading" style="opacity: 0;animation: fadeIn 1s forwards;transform: translateY(50px);">swiftnet</h1>
+                        <p class="intro-text">A free, productivity platform made to connect your business.<br>Crafted with your unique requirements in mind.</p><a class="btn btn-link btn-circle" role="button" href="#about"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="text-center content-section" id="about">
+        <div class="container" style="margin-bottom: 125px;">
+            <div class="row">
+                <div class="col-md-6" style="margin: 0px;margin-bottom: 0px;">
+                    <h1 style="text-align: left;margin-bottom: 5px;">CONNECT YOUR TEAM</h1>
+                    <p style="text-align: left;margin-bottom: 35px;border-style: none;">Streamline communication and collaboration within your organisation effortlessly with out intuitive chat system. Connect your team seamlessly, ensuring everyone stays on the same page, no matter where they are.</p>
+                </div>
+                <div class="col-md-6"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 162px;color: rgb(157,244,151);">
+
+                        <path d="M13 6C13 7.65685 11.6569 9 10 9C8.34315 9 7 7.65685 7 6C7 4.34315 8.34315 3 10 3C11.6569 3 13 4.34315 13 6Z" fill="currentColor"></path>
+                        <path d="M18 8C18 9.10457 17.1046 10 16 10C14.8954 10 14 9.10457 14 8C14 6.89543 14.8954 6 16 6C17.1046 6 18 6.89543 18 8Z" fill="currentColor"></path>
+                        <path d="M14 15C14 12.7909 12.2091 11 10 11C7.79086 11 6 12.7909 6 15V18H14V15Z" fill="currentColor"></path>
+                        <path d="M6 8C6 9.10457 5.10457 10 4 10C2.89543 10 2 9.10457 2 8C2 6.89543 2.89543 6 4 6C5.10457 6 6 6.89543 6 8Z" fill="currentColor"></path>
+                        <path d="M16 18V15C16 13.9459 15.7282 12.9552 15.2507 12.0943C15.4902 12.0327 15.7413 12 16 12C17.6569 12 19 13.3431 19 15V18H16Z" fill="currentColor"></path>
+                        <path d="M4.74926 12.0943C4.27185 12.9552 4 13.9459 4 15V18H1V15C1 13.3431 2.34315 12 4 12C4.25871 12 4.50977 12.0327 4.74926 12.0943Z" fill="currentColor"></path>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="container" style="margin-top: 50px;">
+            <div class="row">
+                <div class="col-md-6"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" style="font-size: 162px;color: rgb(136,190,170);">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 3.89543 3.89543 3 5 3H15C16.1046 3 17 3.89543 17 5V13C17 14.1046 16.1046 15 15 15H12.7808L12.903 15.4887L13.7071 16.2929C13.9931 16.5789 14.0787 17.009 13.9239 17.3827C13.7691 17.7563 13.4045 18 13 18H7.00003C6.59557 18 6.23093 17.7563 6.07615 17.3827C5.92137 17.009 6.00692 16.5789 6.29292 16.2929L7.09706 15.4887L7.21925 15H5C3.89543 15 3 14.1046 3 13V5ZM8.7713 12C8.75657 11.9997 8.74189 11.9997 8.72725 12H5V5H15V12H11.2728C11.2582 11.9997 11.2435 11.9997 11.2288 12H8.7713Z" fill="currentColor"></path>
+                    </svg></div>
+                <div class="col-md-6" style="text-align: right;">
+                    <h1 style="margin-bottom: 5px;">PRODUCTIVITY MADE EASY</h1>
+                    <p>Elevate your team's productivity to new heights with out user-friendly chat system. Experience seamless communication and collaboration, making productivity effortless and efficient for your entire organisation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="text-center content-section" id="login" style="background: linear-gradient(50deg, rgb(63,138,191), rgb(183,241,143));">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h1 style="font-size: 60px;">TRY FOR FREE</h1>
+                <p style="font-family: Lora, serif;"></p>
+            </div>
+        </div><button class="btn btn-primary" type="button" style="margin: 0px;margin-left: 20px;margin-right: 20px;color: rgb(255,255,255);background: rgb(0,0,0,0);padding-right: 60px;padding-left: 60px;border: 5px none rgb(142,206,159);box-shadow: 0px 0px 5px rgb(81,79,79);padding-top: 10px;padding-bottom: 10px;">&nbsp;LOGIN&nbsp;</button><button class="btn btn-primary" type="button" style="margin: 0px;margin-left: 25px;margin-right: 25px;background: rgb(0,0,0,0);box-shadow: 0px 0px 5px rgb(69,69,69);border: 5px none rgb(99,169,176);padding-right: 50px;padding-left: 50px;color: rgb(255,255,255);padding-top: 10px;padding-bottom: 10px;">SIGN UP</button>
+    </section>
+    <section class="text-center content-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact us</h2>
+                    <p>Contact us at <strong>inquiries@swiftnet.co.uk, </strong>where our dedicated support team is here to answer any inquiries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="map-clean"><iframe allowfullscreen="" frameborder="0" loading="lazy" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyArxZ5yoWIcKNRoCfVlxx2YBCbXr48JpOU&amp;q=Attleborough+Academy%2C+United+KIngdom&amp;zoom=13" width="100%" height="450"></iframe></div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright © swiftnet 2024</p>
+        </div>
+    </footer>
+    <%= javascript_include_tag 'bootstrap.min' %>
+    <%= javascript_include_tag 'home' %>
+</body>
+
+</html>
